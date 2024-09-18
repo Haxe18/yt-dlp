@@ -217,6 +217,7 @@ from .bbc import (
     BBCCoUkIPlayerGroupIE,
     BBCCoUkPlaylistIE,
 )
+from .beacon import BeaconTvIE
 from .beatbump import (
     BeatBumpPlaylistIE,
     BeatBumpVideoIE,
@@ -504,7 +505,6 @@ from .dhm import DHMIE
 from .digitalconcerthall import DigitalConcertHallIE
 from .digiteka import DigitekaIE
 from .discogs import DiscogsReleasePlaylistIE
-from .discovery import DiscoveryIE
 from .disney import DisneyIE
 from .dispeak import DigitallySpeakingIE
 from .dlf import (
@@ -532,16 +532,12 @@ from .dplay import (
     DiscoveryPlusIndiaShowIE,
     DiscoveryPlusItalyIE,
     DiscoveryPlusItalyShowIE,
-    DIYNetworkIE,
     DPlayIE,
     FoodNetworkIE,
-    GlobalCyclingNetworkPlusIE,
     GoDiscoveryIE,
     HGTVDeIE,
     HGTVUsaIE,
     InvestigationDiscoveryIE,
-    MotorTrendIE,
-    MotorTrendOnDemandIE,
     ScienceChannelIE,
     TravelChannelIE,
 )
@@ -827,7 +823,10 @@ from .hungama import (
     HungamaIE,
     HungamaSongIE,
 )
-from .huya import HuyaLiveIE
+from .huya import (
+    HuyaLiveIE,
+    HuyaVideoIE,
+)
 from .hypem import HypemIE
 from .hypergryph import MonsterSirenHypergryphMusicIE
 from .hytale import HytaleIE
@@ -944,11 +943,13 @@ from .khanacademy import (
     KhanAcademyUnitIE,
 )
 from .kick import (
+    KickClipIE,
     KickIE,
     KickVODIE,
 )
 from .kicker import KickerIE
 from .kickstarter import KickStarterIE
+from .kika import KikaIE
 from .kinja import KinjaEmbedIE
 from .kinopoisk import KinoPoiskIE
 from .kommunetv import KommunetvIE
@@ -991,6 +992,7 @@ from .lcp import (
     LcpIE,
     LcpPlayIE,
 )
+from .learningonscreen import LearningOnScreenIE
 from .lecture2go import Lecture2GoIE
 from .lecturio import (
     LecturioCourseIE,
@@ -1039,10 +1041,7 @@ from .livestream import (
     LivestreamShortenerIE,
 )
 from .livestreamfails import LivestreamfailsIE
-from .lnkgo import (
-    LnkGoIE,
-    LnkIE,
-)
+from .lnk import LnkIE
 from .loom import (
     LoomFolderIE,
     LoomIE,
@@ -1813,6 +1812,7 @@ from .screen9 import Screen9IE
 from .screencast import ScreencastIE
 from .screencastify import ScreencastifyIE
 from .screencastomatic import ScreencastOMaticIE
+from .screenrec import ScreenRecIE
 from .scrippsnetworks import (
     ScrippsNetworksIE,
     ScrippsNetworksWatchIE,
@@ -1823,6 +1823,7 @@ from .scte import (
     SCTECourseIE,
 )
 from .sejmpl import SejmIE
+from .sen import SenIE
 from .senalcolombia import SenalColombiaLiveIE
 from .senategov import (
     SenateGovIE,
@@ -2174,10 +2175,7 @@ from .tv5unis import (
     TV5UnisVideoIE,
 )
 from .tv24ua import TV24UAVideoIE
-from .tva import (
-    TVAIE,
-    QubIE,
-)
+from .tva import TVAIE
 from .tvanouvelles import (
     TVANouvellesArticleIE,
     TVANouvellesIE,
@@ -2317,6 +2315,7 @@ from .videomore import (
     VideomoreVideoIE,
 )
 from .videopress import VideoPressIE
+from .vidflex import VidflexIE
 from .vidio import (
     VidioIE,
     VidioLiveIE,
